@@ -29,8 +29,9 @@ function validateUrl(aLink) {
 }
 
 function isExist(link) {
+    const localStorageLinks = JSON.parse(localStorage.getItem('links'));
     return links.some(l => l.orginalLink === link.orginalLink)
-        || JSON.parse(localStorage.getItem('links')).some(l => l.orginalLink === link.orginalLink);
+        || localStorageLinks?.some(l => l.orginalLink === link.orginalLink);
 }
 
 
