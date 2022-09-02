@@ -72,10 +72,10 @@ function shortenLinkRender(link) {
             <span class="orginal-link text-violet-dark px-4 md:px-0 md:pl-4">${link.orginalLink}</span>
           </span>
           <hr class="md:appearance-none border-none h-[0.5px] bg-slate-300">
-          <span class="text-ellipsis whitespace-nowrap overflow-hidden pr-4 md:w-2/3">
-            <span data-link="${link.shortLink}" class="short-link.shortLink text-cyan px-4 md:text-right">${link.shortLink}</span>
+          <span class="text-ellipsis whitespace-nowrap overflow-hidden pr-4 md:w-2/3 md:text-right text-cyan">
+            <a href="${link.shortLink}" class="short-link.shortLink text-cyan px-4">${link.shortLink}</a>
           </span>
-          <button class="copy-btn mx-4 md:mx-0 md:mr-4 py-2 bg-cyan text-white rounded md:w-32 hover:opacity-70 duration-500" data-link="${link}">Copy</button>
+          <button class="copy-btn mx-4 md:mx-0 md:mr-4 py-2 bg-cyan text-white rounded font-bold md:w-32 hover:opacity-70 duration-500" data-link="${link}">Copy</button>
     </li>`;
     shortenList.insertAdjacentHTML('beforeend', html);
     urlInput.value = '';
@@ -86,7 +86,7 @@ function shortenLinkRender(link) {
 //Fetch shorten url
 async function shortenUrl(e) {
     e.preventDefault();
-    const url = urlInput.value.trim();
+    const url = urlInput.value;
     console.log(url.length);
     validateUrl(url);
     try {
