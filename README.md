@@ -33,13 +33,8 @@ Users should be able to:
 
 ### Links
 
-<<<<<<< HEAD
 - Solution URL: [Add solution URL here](https://github.com/salma247/-URL-shortening-API/)
 - Live Site URL: [Add live site URL here](https://salma247.github.io/-URL-shortening-API/public/)
-=======
-- Solution URL: [Link](https://github.com/salma247/-URL-shortening-API/)
-- Live Site URL: [Link](https://salma247.github.io/-URL-shortening-API/)
->>>>>>> f197001bb2235c4f1d28daa71634a55bf7d8f9b6
 
 ### Built with
 
