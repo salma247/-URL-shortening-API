@@ -1,0 +1,80 @@
+* {
+  scroll-behavior: smooth;
+
+  --Cyan: hsl(180, 66%, 49%);
+  --Dark-Violet: hsl(257, 27%, 26%);
+
+  --Red: hsl(0, 87%, 67%);
+
+  --Gray: hsl(0, 0%, 75%);
+  --Grayish-Violet: hsl(257, 7%, 63%);
+  --Very-Dark-Blue: hsl(255, 11%, 22%);
+  --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
+/* Style the top navigation bar */
+#menu {
+  -webkit-tap-highlight-color: transparent;
+}
+/* hero styling */
+.hero__img {
+  background-image: url(../images/illustration-working.svg);
+}
+
+/* Shorten section */
+.shorten-card {
+  background: linear-gradient(
+    to top,
+    #eff1f7 0%,
+    #eff1f7 50%,
+    hsl(0, 0%, 100%) 50%,
+    hsl(0, 0%, 100%) 100%
+  );
+}
+.shorten-bg {
+  background-image: url(../images/bg-shorten-mobile.svg);
+  background-size: 75% 80%;
+}
+
+@media (min-width: 768px) {
+  .shorten-bg {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-size: cover;
+  }
+}
+
+/*statistics cards*/
+
+.statistics .cards {
+  background: linear-gradient(
+    90deg,
+    #eff1f7 calc(50% - 3px),
+    hsl(180, 66%, 49%) calc(50%),
+    #eff1f7 calc(50% + 3px)
+  );
+}
+
+@media (min-width: 768px) {
+  .statistics .cards {
+    background: linear-gradient(
+      180deg,
+      #eff1f7 calc(50% - 3px),
+      hsl(180, 66%, 49%) calc(50%),
+      #eff1f7 calc(50% + 3px)
+    );
+  }
+}
+
+/*Call to action section*/
+.call-to-action {
+  background-image: url(../images/bg-boost-mobile.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .call-to-action {
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-position: center;
+  }
+}
+
